@@ -1,0 +1,36 @@
+<!--
+theme name:     Slanty RG40XXH
+creator:		Dwayne Hurst
+version         1
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>   
+<feature supported="carousel">
+   <view name="system">
+             
+      <text name="systemInfo">     
+         <pos>0 0.657</pos>
+         <backgroundColor>00000000</backgroundColor>
+         <color>ffffff</color>
+         <glowColor>000000</glowColor>
+         <glowSize>2</glowSize>         
+         <fontPath>./_inc/fonts/data-latin.ttf</fontPath>
+	     <fontSize>0.038</fontSize>
+         <zIndex>25</zIndex>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="100" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="500" mode="Linear"/>
+			</storyboard>                      	     
+      </text>
+
+        <video name="backgroundvideo" extra="static">
+        <pos>0 0</pos>
+        <origin>0 0</origin>
+        <size>1 1</size>
+        </video>      
+                  
+   </view>
+</feature>  
+</theme>

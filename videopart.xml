@@ -1,0 +1,81 @@
+<!--
+theme name:     Slanty RG40XXH
+creator:		Dwayne Hurst
+version         1
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>   
+<feature supported="carousel">
+   <view name="system">
+
+      <text name="system-name2" extra="true">
+         <origin>0 0</origin>
+         <pos>-0.095 0.665</pos>
+         <size>0.8 0.4</size>
+         <fontSize>0.03</fontSize>
+         <fontPath>./_inc/fonts/data-latin.ttf</fontPath>
+         <forceUppercase>true</forceUppercase>
+         <alignment>center</alignment>
+         <lineSpacing>1</lineSpacing>
+         <color>ffffff</color>
+         <glowColor>000000</glowColor>
+         <glowSize>2</glowSize>         
+         <text>${system.fullName}</text>
+         <zIndex>50</zIndex>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="100" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="500" mode="Linear"/>
+			</storyboard>          
+      </text>
+
+      <image name="background656" extra="true">
+         <origin>0 0</origin>
+         <path>./_inc/images/base2.png</path>         
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <zIndex>9</zIndex>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="100" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="500" mode="Linear"/>
+			</storyboard>                                        
+      </image>
+
+      <image name="image23" extra="true">
+         <origin>0 0</origin>
+	 <path>./_inc/logos/${system.theme}.png</path>         
+         <pos>1 0.0025</pos>
+         <size>0.396875 0.95</size>
+         <zIndex>10</zIndex>  
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="100" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="500" mode="Linear"/>
+				<animation property="x" from="1" to="0.59875" begin="3000" duration="500" mode="Linear"/>
+			</storyboard>                              
+      </image>  
+             
+      <text name="systemInfo">     
+         <pos>-0.2 0.885</pos>
+         <backgroundColor>00000000</backgroundColor>
+         <color>ffffff</color>
+         <glowColor>000000</glowColor>
+         <glowSize>2</glowSize>         
+         <fontPath>./_inc/fonts/data-latin.ttf</fontPath>
+	     <fontSize>0.038</fontSize>
+         <zIndex>25</zIndex>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="100" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="500" mode="Linear"/>
+			</storyboard>                      	     
+      </text>
+
+        <video name="backgroundvideo" extra="static">
+        <pos>0.01875 0.022916</pos>
+        <origin>0 0</origin>
+        <size>0.773 0.779</size>
+        </video>      
+                  
+   </view>
+</feature>  
+</theme>
